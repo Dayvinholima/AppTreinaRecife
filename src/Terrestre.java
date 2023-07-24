@@ -33,8 +33,8 @@ public class Terrestre extends MeioDeTransporte {
 
     // Sobrescrita do método consumo específico para o meio de transporte terrestre
     @Override
-    public double consumo() {
-        // Implementação do consumo para o meio de transporte terrestre (não especificado na questão)
+    public double consumo() {// Implementação do consumo para o meio de transporte terrestre (não especificado na questão
+
         return 0.0; // Necessário implementar o cálculo real do consumo
     }
 }
