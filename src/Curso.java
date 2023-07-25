@@ -1,10 +1,90 @@
 public class Curso {
     
-    String nome;
-    String descricao;
-    double preco;
-    int cargaHoraria;
-    Professor professor;
+    private String nome;
+    private String descricao;
+    private double preco;
+    private int cargaHoraria;
+    private Professor professor;
+
+    Curso(){
+    }
+    
+    Curso(String nome) {
+        this.nome = nome;
+    }
+    
+    Curso(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
+    }
+    
+    Curso(String nome, String descricao, double preco) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+    }
+    
+    public Curso(String nome, String descricao, Professor professor) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.professor = professor;
+    }
+
+    Curso(String nome, String descricao, int cargaHoraria) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.cargaHoraria = cargaHoraria;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+
+    public double getPreco() {
+        return preco;
+    }
+
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+
+    public int getCargaHoraria() {
+        return cargaHoraria;
+    }
+
+
+    public void setCargaHoraria(int cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
+    }
+
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
 
     void exibirDetalhes (){
 
