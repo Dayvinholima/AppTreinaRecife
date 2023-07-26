@@ -14,9 +14,9 @@ public class App {
         professor2.setTelefone("(81) 987651234");
         
         
-        Curso logicaComPython = new Curso();
+        Curso logicaComPython = new Curso("Logica de programação com Phyton");
         
-        logicaComPython.setNome("Logica de programação com Phyton") ;
+        
         logicaComPython.setDescricao("Curso de lógica para iniciantes");
         logicaComPython.setPreco(59.90);
         logicaComPython.setCargaHoraria(30);
@@ -27,9 +27,9 @@ public class App {
         
         logicaComPython.exibirDetalhes();
         
-        Curso javaWeb = new Curso();
+        Curso javaWeb = new Curso("java web com spring Boot");
 
-        javaWeb.setNome("java web com spring Boot");
+        
         javaWeb.setDescricao("Curso de Java Web com Spri");
         javaWeb.setPreco(69.90);
         javaWeb.setCargaHoraria(48);
@@ -37,10 +37,15 @@ public class App {
 
         //javaWeb.exibirDetalhes();
         
-        CursoOnline cursoGit = new CursoOnline();
+        CursoOnline cursoGit = new CursoOnline("curso de git e GitHub");
 
         cursoGit.setNome("curso de Git e Github");
         cursoGit.setPlataforma("Hotmart");
+        cursoGit.setPreco(100);
+
+        cursoGit.exibirDetalhes();
+        cursoGit.aplicarDesconto(0.15);
+        cursoGit.exibirDetalhes();
 
 
     }

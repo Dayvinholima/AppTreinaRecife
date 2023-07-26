@@ -6,19 +6,19 @@ public class Curso {
     private int cargaHoraria;
     private Professor professor;
 
-    Curso(){
-    }
+    /*Curso(){
+    }*/
     
-    Curso(String nome) {
+    public Curso(String nome) {
         this.nome = nome;
     }
     
-    Curso(String nome, String descricao) {
+    public Curso(String nome, String descricao) {
         this.nome = nome;
         this.descricao = descricao;
     }
     
-    Curso(String nome, String descricao, double preco) {
+    public Curso(String nome, String descricao, double preco) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
@@ -30,7 +30,7 @@ public class Curso {
         this.professor = professor;
     }
 
-    Curso(String nome, String descricao, int cargaHoraria) {
+    public Curso(String nome, String descricao, int cargaHoraria) {
         this.nome = nome;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
@@ -86,7 +86,7 @@ public class Curso {
     }
 
 
-    void exibirDetalhes (){
+    public void exibirDetalhes (){
 
         String mensagem = "Detalhes do Curso";
         System.out.println(mensagem);
@@ -100,7 +100,7 @@ public class Curso {
 
     }
 
-    double aplicarDesconto(double porcetagem){
+    public double aplicarDesconto(double porcetagem){
         
         preco -= preco * porcetagem;
 

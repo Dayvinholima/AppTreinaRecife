@@ -4,13 +4,13 @@ public class Professor {
     private String email;
     private String telefone;
 
-    Professor(){
+    public Professor(){
         
     }
     
     
 
-    Professor(String nome) {
+    public Professor(String nome) {
         this.nome = nome;
     }
 
@@ -56,7 +56,7 @@ public class Professor {
 
 
 
-    void exibirDetalhes(){
+    public void exibirDetalhes(){
         
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);
