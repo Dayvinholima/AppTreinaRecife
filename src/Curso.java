@@ -6,8 +6,7 @@ public class Curso {
     private int cargaHoraria;
     private Professor professor;
 
-    /*Curso(){
-    }*/
+    
     
     public Curso(String nome) {
         this.nome = nome;

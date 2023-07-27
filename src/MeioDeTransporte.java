@@ -1,14 +1,12 @@
-public class MeioDeTransporte {
+public class MeioDeTransporte extends Transporte{
     private int id;
     private short ano;
     private String modelo;
     private double cargaMaxima;
 
-    // Construtor padrão
     public MeioDeTransporte() {
     }
 
-    // Construtor que recebe todos os parâmetros para inicializar os dados do meio de transporte
     public MeioDeTransporte(int id, short ano, String modelo, double cargaMaxima) {
         this.id = id;
         this.ano = ano;
@@ -16,13 +14,12 @@ public class MeioDeTransporte {
         this.cargaMaxima = cargaMaxima;
     }
 
-    public double consumo() {
-        // Implementação do consumo para o meio de transporte (não especificado na questão)
-        return 0.0; // Necessário implementar o cálculo real do consumo
+    public Double consumo() { 
+        return consumo();
     }
 
-    // Getters e Setters para os atributos da classe
-    public int getId() {
+    
+    public Integer getId() {
         return id;
     }
 
@@ -30,8 +27,8 @@ public class MeioDeTransporte {
         this.id = id;
     }
 
-    public short getAno() {
-        return ano;
+    public Integer getAno() {
+        return (int) ano;
     }
 
     public void setAno(short ano) {

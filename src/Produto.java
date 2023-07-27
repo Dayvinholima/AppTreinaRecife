@@ -6,11 +6,9 @@ public class Produto {
     private String descricao;
     private Date validade;
 
-    // Construtor padrão
     public Produto() {
     }
 
-    // Construtor que recebe todos os parâmetros para inicializar os dados de um produto
     public Produto(Integer id, String nome, String descricao, Date validade) {
         this.id = id;
         this.nome = nome;
@@ -19,11 +17,9 @@ public class Produto {
     }
 
     public Integer getCod() {
-        // Retorna o identificador da classe instanciada, ou seja, o "id"
         return id;
     }
 
-    // Getters e Setters para os atributos da classe
     public Integer getId() {
         return id;
     }

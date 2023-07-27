@@ -5,11 +5,10 @@ public class Transporte {
     private Double carga_maxima;
     private Double potencia;
 
-    // Construtor padrão
     public Transporte() {
     }
 
-    // Construtor que recebe todos os parâmetros para inicializar os dados de um transporte
+    
     public Transporte(Integer id, Integer ano, String modelo, Double carga_maxima, Double potencia) {
         this.id = id;
         this.ano = ano;
@@ -19,21 +18,17 @@ public class Transporte {
     }
 
     public Double consumo() {
-        // Retorna o consumo = potência do motor x carga máxima (kg) x 100
         return potencia * carga_maxima * 100;
     }
 
     public String leiaModelo() {
-        // Lê o modelo do transporte
         return modelo;
     }
 
     public void gravaModelo(String modelo) {
-        // Grava o modelo no atributo da classe
         this.modelo = modelo;
     }
 
-    // Getters e Setters para os atributos da classe
     public Integer getId() {
         return id;
     }
