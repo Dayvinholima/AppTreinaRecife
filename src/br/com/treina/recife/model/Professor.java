@@ -1,3 +1,4 @@
+package br.com.treina.recife.model;
 public class Professor {
     
     private String nome;
