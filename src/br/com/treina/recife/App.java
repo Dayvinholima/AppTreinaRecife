@@ -22,7 +22,7 @@ public class App {
         professor2.setNome("Alexandre de Souza Jr.");
         professor2.setEmail("alexandre.junior@treinarecife.com.br");
         professor2.setTelefone("(81) 98765-1234");
-
+        
         CursoPresencial logicaComPython = new CursoPresencial("Lógica de Programação com Python");
 
         logicaComPython.setDescricao("Curso de lógica para iniciantes");
@@ -57,8 +57,6 @@ public class App {
 
         cursogit.exibirDetalhes();
         novoPreco = cursogit.aplicarDesconto(0.1);
-        
         System.out.println("Novo preço: " + novoPreco);
-
 }
 }
